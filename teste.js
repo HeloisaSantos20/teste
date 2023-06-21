@@ -1,4 +1,14 @@
 (function() {
+    var scriptUrl = document.currentScript.src;
+
+   
+    var url = new URL(scriptUrl);
+
+   
+    var searchParams = new URLSearchParams(url.search);
+
+    
+    if (searchParams.has('store')) {
     function getProducts() {
         var xhr = new XMLHttpRequest();
       
@@ -61,4 +71,5 @@
 
     console.log('Produto adicionado aos favoritos:', productId, productName);
   }
+    }
 })();
