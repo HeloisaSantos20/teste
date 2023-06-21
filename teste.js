@@ -3,7 +3,7 @@
         var xhr = new XMLHttpRequest();
       
         xhr.open('GET', 'https://api.tiendanube.com/v1/2622861/products');
-        xhr.setRequestHeader('Authentication', 'bearer 4ccee43e6d5718186395e61a89633d551f65eff2');
+        xhr.setRequestHeader('Authentication', 'bearer 1960cf09e6d6d50ce7445bc3bfb97fcd23164c47');
         
         xhr.onload = function() {
           if (xhr.status === 200) {
@@ -50,14 +50,14 @@
     });
     productElement.appendChild(favoritesButton);
     
-    // Adiciona o elemento de produto ao container
+    // Adiciona o produto ao container
     productsContainer.appendChild(productElement);
   });
   
  
   function addToFavorites(productId, productName) {
 
-    // lógica para adicionar o produto na lista de favoritos
+    //adicionar o produto na lista de favoritos
 
     console.log('Produto adicionado aos favoritos:', productId, productName);
   }
